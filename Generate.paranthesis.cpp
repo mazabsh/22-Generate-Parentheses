@@ -11,7 +11,7 @@ public:
          return ; 
        }
        if(open<n) backtrack(curr+'(', open+1, close, n, res); 
-       if(close(<open) backtrack(curr+')', open, close+1, n, res); 
+       if(close<open) backtrack(curr+')', open, close+1, n, res); 
        
      }
      vector<string> generateParenthesis(int n) {
